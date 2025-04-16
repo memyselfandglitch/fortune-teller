@@ -5,6 +5,9 @@ on:
     tags:
       - 'v*.*'
 
+permissions:
+  contents: write  # 💥 This line is required to allow release creation
+
 jobs:
   release:
     runs-on: ubuntu-latest
